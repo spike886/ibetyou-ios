@@ -358,6 +358,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Inaka;
 				TargetAttributes = {
+					6B71104F192F762E0095149F = {
+						DevelopmentTeam = 4SGR3E7G55;
+					};
 					6B71106A192F762E0095149F = {
 						TestTargetID = 6B71104F192F762E0095149F;
 					};
@@ -580,10 +583,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IBetYou/IBetYou-Prefix.pch";
 				INFOPLIST_FILE = "IBetYou/IBetYou-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -594,10 +600,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IBetYou/IBetYou-Prefix.pch";
 				INFOPLIST_FILE = "IBetYou/IBetYou-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
