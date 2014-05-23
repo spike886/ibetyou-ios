@@ -27,6 +27,7 @@
     {
         mainNavigationController.title = @"Welcome!";
         mainNavigationController.tabBarController = tabBarController;
+        [mainNavigationController setNavigationBarHidden:YES];
     }
     return mainNavigationController;
 }

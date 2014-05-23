@@ -11,5 +11,7 @@
 @interface IBYUser : NSObject
 
 @property (strong, nonatomic) NSString *email;
+@property (readwrite, nonatomic) NSInteger won;
+@property (readwrite, nonatomic) NSInteger lost;
 
 @end

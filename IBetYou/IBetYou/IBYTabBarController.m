@@ -8,14 +8,10 @@
 
 #import "IBYTabBarController.h"
 #import "IBYMyCurrentBetsViewController.h"
-#import "IBYScoreboardViewController.h"
+#import "IBYDashboardViewController.h"
 #import "IBYCreateBetViewController.h"
 
 @interface IBYTabBarController ()
-
-@property (strong, nonatomic) IBYMyCurrentBetsViewController *myCurrentBetsViewController;
-@property (strong, nonatomic) IBYScoreboardViewController *scoreboardViewController;
-@property (strong, nonatomic) IBYCreateBetViewController *createBetViewControllers;
 
 @end
 
@@ -27,12 +23,20 @@
 {
     [super viewDidLoad];
     
-    _myCurrentBetsViewController = [[IBYMyCurrentBetsViewController alloc] init];
-    _scoreboardViewController = [[IBYScoreboardViewController alloc] init];
-    _createBetViewControllers = [[IBYCreateBetViewController alloc] init];
+    IBYMyCurrentBetsViewController *myCurrentBetsViewController = [[IBYMyCurrentBetsViewController alloc] init];
+    IBYDashboardViewController *dashboardViewController = [[IBYDashboardViewController alloc] init];
+    IBYCreateBetViewController *createBetViewController =[[IBYCreateBetViewController alloc] init];
     
-    self.viewControllers = @[_myCurrentBetsViewController, _scoreboardViewController, _createBetViewControllers];
-    self.selectedIndex = 1;
+    UINavigationController *navigationCurrent = [[UINavigationController alloc] initWithRootViewController:myCurrentBetsViewController];
+    UINavigationController *navigationDashboard = [[UINavigationController alloc] initWithRootViewController:dashboardViewController];
+    UINavigationController *navigationCreate = [[UINavigationController alloc] initWithRootViewController:createBetViewController];
+    
+    navigationCurrent.title = @"Current";
+    navigationDashboard.title = @"Dashboard";
+    navigationCreate.title = @"Create";
+    
+    self.viewControllers = @[navigationCurrent, navigationDashboard, navigationCreate];
+    self.selectedIndex = IBYTabBarScoreboardTab;
 }
 
 @end

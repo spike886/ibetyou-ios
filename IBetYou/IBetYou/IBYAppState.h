@@ -11,6 +11,8 @@
 @interface IBYAppState : NSObject
 
 @property (strong, nonatomic) NSString *loginToken;
+@property (strong, nonatomic) NSString *userEmail;
+@property (readwrite, nonatomic) NSInteger userPoints;
 
 + (instancetype)state;
 

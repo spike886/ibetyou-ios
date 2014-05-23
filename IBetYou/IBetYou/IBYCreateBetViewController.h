@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Inaka. All rights reserved.
 //
 
-#import "IBYViewController.h"
+#import "IBYTabViewController.h"
 
-@interface IBYCreateBetViewController : IBYViewController
+@interface IBYCreateBetViewController : IBYTabViewController
 
 @end

@@ -10,8 +10,14 @@
 
 @interface IBYViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *messageLabel;
+
+@property (readwrite, nonatomic) BOOL autodismissKeyboard;
+
 - (void)showProgressHUDWithText:(NSString *)text;
 - (void)hideProgressHUD;
 - (void)hideKeyboard;
+- (void)showMessage:(NSString *)message color:(UIColor *)color;
+- (void)clearMessage;
 
 @end

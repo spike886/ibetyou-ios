@@ -11,9 +11,41 @@
 
 @interface IBYViewController ()
 
+@property (strong, nonatomic) UIGestureRecognizer *gestureRecognizer;
+
 @end
 
 @implementation IBYViewController
+
+#pragma mark - Lifecycle
+
+- (id)init
+{
+    self = [super init];
+    if (self)
+    {
+        _gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
+    }
+    return self;
+}
+
+#pragma mark - Accessors
+
+- (void)setAutodismissKeyboard:(BOOL)autodismissKeyboard
+{
+    _autodismissKeyboard = autodismissKeyboard;
+    
+    if (autodismissKeyboard)
+    {
+        [self.view addGestureRecognizer:_gestureRecognizer];
+    }
+    else
+    {
+        [self.view removeGestureRecognizer:_gestureRecognizer];
+    }
+}
+
+#pragma mark - Public
 
 - (void)showProgressHUDWithText:(NSString *)text
 {
@@ -28,6 +60,17 @@
 - (void)hideKeyboard
 {
     [self.view endEditing:YES];
+}
+
+- (void)showMessage:(NSString *)message color:(UIColor *)color
+{
+    _messageLabel.text = message;
+    _messageLabel.textColor = color;
+}
+
+- (void)clearMessage
+{
+    _messageLabel.text = @"";
 }
 
 @end

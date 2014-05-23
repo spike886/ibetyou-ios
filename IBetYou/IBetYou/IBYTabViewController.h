@@ -1,5 +1,5 @@
 //
-//  IBYScoreboardViewController.h
+//  IBYTabViewController.h
 //  IBetYou
 //
 //  Created by Pablo Villar on 5/23/14.
@@ -7,7 +7,8 @@
 //
 
 #import "IBYViewController.h"
+#import "IBYTabBarController.h"
 
-@interface IBYScoreboardViewController : IBYViewController
+@interface IBYTabViewController : IBYViewController
 
 @end

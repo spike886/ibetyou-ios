@@ -15,7 +15,6 @@
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (strong, nonatomic) IBOutlet UITextField *confirmPasswordTextField;
 @property (strong, nonatomic) IBOutlet UIButton *signUpButton;
-@property (strong, nonatomic) IBOutlet UILabel *messageLabel;
 
 @property (strong, nonatomic) IBYSignUpWebService *signUpWebService;
 
@@ -36,6 +35,14 @@
     return self;
 }
 
+#pragma mark - UIViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.autodismissKeyboard = YES;
+}
+
 #pragma mark - IBAction
 
 - (IBAction)signUpButtonPressed:(id)sender
@@ -48,12 +55,12 @@
 
 - (IBAction)emailTextFieldEditingChanged:(id)sender
 {
-    _signUpButton.enabled = [self isValidForm];
+    [self validateForm];
 }
 
 - (IBAction)anyPasswordTextFieldEditingChanged:(id)sender
 {
-    _signUpButton.enabled = [self isValidForm];
+    [self validateForm];
     
     if (![self passwordsMatch])
     {
@@ -119,15 +126,9 @@
     return [_confirmPasswordTextField.text isEqualToString:_passwordTextField.text];
 }
 
-- (void)showMessage:(NSString *)message color:(UIColor *)color
+- (void)validateForm
 {
-    _messageLabel.text = message;
-    _messageLabel.textColor = color;
-}
-
-- (void)clearMessage
-{
-    _messageLabel.text = @"";
+    _signUpButton.enabled = [self isValidForm];
 }
 
 @end

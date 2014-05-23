@@ -7,6 +7,7 @@
 //
 
 #import "IBYWebService.h"
+#import "IBYJSONRequestSerializer.h"
 
 NSString *const IBYWebServiceBaseURLString = @"http://192.168.1.30:4567";
 
@@ -20,6 +21,8 @@ NSString *const IBYWebServiceBaseURLString = @"http://192.168.1.30:4567";
     if (self)
     {
         _manager = [AFHTTPRequestOperationManager manager];
+//        IBYJSONRequestSerializer *serializer = [[IBYJSONRequestSerializer alloc] init];
+//        _manager.responseSerializer = [AFJSONResponseSerializer serializer];
     }
     return self;
 }

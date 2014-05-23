@@ -44,6 +44,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.autodismissKeyboard = YES;
     if([[IBYAppState state] loginToken])
     {
         [self showMainScreenAnimated:NO];
@@ -93,6 +95,7 @@
 
 - (void)loginWebServiceDidFailWithError:(NSError *)error
 {
+    [[IBYAppState state] setUserEmail:nil];
     [self hideProgressHUD];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login failed" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
@@ -120,6 +123,7 @@
 
 - (void)loginWithEmail:(NSString *)email password:(NSString *)password
 {
+    [[IBYAppState state] setUserEmail:email];
     [self hideKeyboard];
     [self showProgressHUDWithText:@"Logging in..."];
     [_loginWebService loginWithEmail:email password:password];
