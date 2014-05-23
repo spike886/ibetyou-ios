@@ -7,6 +7,7 @@
 //
 
 #import "IBYAppDelegate.h"
+#import "IBYLoginViewController.h"
 
 @implementation IBYAppDelegate
 
@@ -16,6 +17,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    [self.window setRootViewController:[[UINavigationController alloc] initWithRootViewController:[[IBYLoginViewController alloc] init]]];
     return YES;
 }
 

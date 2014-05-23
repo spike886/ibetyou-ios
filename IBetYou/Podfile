@@ -3,3 +3,4 @@ platform :ios, '7.0'
 link_with 'IBetYou'
 pod "AFNetworking", "~> 2.0"
 pod "MBProgressHUD", "~> 0.8"
+pod 'SVProgressHUD', :head
