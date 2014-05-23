@@ -7,6 +7,7 @@
 //
 
 #import "IBYLoginWebService.h"
+#import "IBYAppState.h"
 
 @interface IBYLoginWebService ()
 
@@ -33,6 +34,8 @@
     [self.manager POST:[self URLStringWithPath:@"/login"]
             parameters:@{@"email" : email, @"password" : password}
                success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                   NSString *token = operation.response.allHeaderFields[@"X-Token"];
+                   [[IBYAppState state] setLoginToken:token];
                    [_delegate loginWebServiceDidCompleteLogin];
                }
                failure:^(AFHTTPRequestOperation *operation, NSError *error) {

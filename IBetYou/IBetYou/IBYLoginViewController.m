@@ -10,6 +10,7 @@
 #import "IBYLoginWebService.h"
 #import "IBYSignUpViewController.h"
 #import "IBYMainNavigationController.h"
+#import "IBYAppState.h"
 
 @interface IBYLoginViewController () <IBYLoginWebServiceDelegate, IBYSignUpViewControllerDelegate, UITextFieldDelegate>
 
@@ -38,11 +39,22 @@
     return self;
 }
 
+#pragma mark - UIViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    if([[IBYAppState state] loginToken])
+    {
+        [self showMainScreenAnimated:NO];
+    }
+}
+
 #pragma mark - IBAction
 
 - (IBAction)textFieldEditingChanged:(id)sender
 {
-    _loginButton.enabled = [self isValidForm];
+    [self validateForm];
 }
 
 - (IBAction)loginButtonPressed:(id)sender
@@ -75,7 +87,8 @@
 - (void)loginWebServiceDidCompleteLogin
 {
     [self hideProgressHUD];
-    [self showMainScreen];
+    [self resetTextFields];
+    [self showMainScreenAnimated:YES];
 }
 
 - (void)loginWebServiceDidFailWithError:(NSError *)error
@@ -99,10 +112,10 @@
     return _emailTextField.text.length > 0 && _passwordTextField.text.length > 0;
 }
 
-- (void)showMainScreen
+- (void)showMainScreenAnimated:(BOOL)animated
 {
     IBYMainNavigationController *navigationController = [IBYMainNavigationController mainNavigationController];
-    [self.navigationController presentViewController:navigationController animated:YES completion:nil];
+    [self.navigationController presentViewController:navigationController animated:animated completion:nil];
 }
 
 - (void)loginWithEmail:(NSString *)email password:(NSString *)password
@@ -110,6 +123,18 @@
     [self hideKeyboard];
     [self showProgressHUDWithText:@"Logging in..."];
     [_loginWebService loginWithEmail:email password:password];
+}
+
+- (void)resetTextFields
+{
+    _emailTextField.text = @"";
+    _passwordTextField.text = @"";
+    [self validateForm];
+}
+
+- (void)validateForm
+{
+    _loginButton.enabled = [self isValidForm];
 }
 
 @end

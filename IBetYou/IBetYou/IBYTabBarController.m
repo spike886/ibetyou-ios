@@ -21,17 +21,18 @@
 
 @implementation IBYTabBarController
 
-- (id)init
+#pragma mark - UIViewController
+
+- (void)viewDidLoad
 {
-    self = [super init];
-    if (self)
-    {
-        _myCurrentBetsViewController = [[IBYMyCurrentBetsViewController alloc] init];
-        _scoreboardViewController = [[IBYScoreboardViewController alloc] init];
-        _createBetViewControllers = [[IBYCreateBetViewController alloc] init];
-        self.viewControllers = @[_myCurrentBetsViewController, _scoreboardViewController, _createBetViewControllers];
-    }
-    return self;
+    [super viewDidLoad];
+    
+    _myCurrentBetsViewController = [[IBYMyCurrentBetsViewController alloc] init];
+    _scoreboardViewController = [[IBYScoreboardViewController alloc] init];
+    _createBetViewControllers = [[IBYCreateBetViewController alloc] init];
+    
+    self.viewControllers = @[_myCurrentBetsViewController, _scoreboardViewController, _createBetViewControllers];
+    self.selectedIndex = 1;
 }
 
 @end

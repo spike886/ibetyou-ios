@@ -25,6 +25,7 @@
 		6B2AF462192F978F00CBA0DD /* IBYScoreboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B2AF460192F978F00CBA0DD /* IBYScoreboardViewController.xib */; };
 		6B2AF467192F97B400CBA0DD /* IBYCreateBetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AF465192F97B400CBA0DD /* IBYCreateBetViewController.m */; };
 		6B2AF468192F97B400CBA0DD /* IBYCreateBetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B2AF466192F97B400CBA0DD /* IBYCreateBetViewController.xib */; };
+		6B2AF46E192F9CDA00CBA0DD /* IBYAppState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AF46D192F9CDA00CBA0DD /* IBYAppState.m */; };
 		6B711054192F762E0095149F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B711053192F762E0095149F /* Foundation.framework */; };
 		6B711056192F762E0095149F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B711055192F762E0095149F /* CoreGraphics.framework */; };
 		6B711058192F762E0095149F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B711057192F762E0095149F /* UIKit.framework */; };
@@ -82,6 +83,8 @@
 		6B2AF464192F97B400CBA0DD /* IBYCreateBetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBYCreateBetViewController.h; sourceTree = "<group>"; };
 		6B2AF465192F97B400CBA0DD /* IBYCreateBetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBYCreateBetViewController.m; sourceTree = "<group>"; };
 		6B2AF466192F97B400CBA0DD /* IBYCreateBetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IBYCreateBetViewController.xib; sourceTree = "<group>"; };
+		6B2AF46C192F9CDA00CBA0DD /* IBYAppState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBYAppState.h; sourceTree = "<group>"; };
+		6B2AF46D192F9CDA00CBA0DD /* IBYAppState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBYAppState.m; sourceTree = "<group>"; };
 		6B711050192F762E0095149F /* IBetYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBetYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B711053192F762E0095149F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6B711055192F762E0095149F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -131,6 +134,8 @@
 		6B2AF435192F78B700CBA0DD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6B2AF46C192F9CDA00CBA0DD /* IBYAppState.h */,
+				6B2AF46D192F9CDA00CBA0DD /* IBYAppState.m */,
 				6B2AF442192F82C200CBA0DD /* Entities */,
 				6B2AF43B192F7C2C00CBA0DD /* Web Service */,
 			);
@@ -451,6 +456,7 @@
 				6B2AF441192F7E4200CBA0DD /* IBYViewController.m in Sources */,
 				6B2AF451192F8B7E00CBA0DD /* IBYWebService.m in Sources */,
 				6B2AF439192F798D00CBA0DD /* IBYSignUpViewController.m in Sources */,
+				6B2AF46E192F9CDA00CBA0DD /* IBYAppState.m in Sources */,
 				6B711064192F762E0095149F /* IBYAppDelegate.m in Sources */,
 				6B2AF445192F82E100CBA0DD /* IBYUser.m in Sources */,
 				6B2AF44E192F883800CBA0DD /* IBYMainNavigationController.m in Sources */,
