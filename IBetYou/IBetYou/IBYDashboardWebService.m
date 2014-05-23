@@ -39,10 +39,14 @@
                   
                   NSDictionary *result = responseObject[@"result"];
 
+                  
                   IBYLoggedUser *loggedUser = [[IBYLoggedUser alloc] init];
                   loggedUser.points = [result[@"points"] integerValue];
                   loggedUser.pointsOnTable = [result[@"points_on_table"] integerValue];
                   loggedUser.email = [[IBYAppState state] userEmail];
+                  
+                  [[IBYAppState state] setUserPoints:loggedUser.points];
+                  
                   // TODO: Crazy Parsing
 //                  NSMutableArray *users = [NSMutableArray array];
 //                  NSMutableDictionary *usersDictionary = [NSMutableDictionary dictionary];

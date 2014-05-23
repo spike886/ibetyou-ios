@@ -51,7 +51,6 @@
 {
     [super viewDidAppear:animated];
     _currentUserPoints = [[IBYAppState state] userPoints];
-    _currentPointsLabel.text = [NSString stringWithFormat:@"%ld", (long)[[IBYAppState state] userPoints]];
     [self updatePoints];
 }
 
@@ -161,6 +160,7 @@
 
 - (void)updatePoints
 {
+    _currentPointsLabel.text = [NSString stringWithFormat:@"%ld", (long)[[IBYAppState state] userPoints]];
     NSInteger afterwardPoints = _currentUserPoints - [self pointsFrom:_pointsTextField];
     _afterwardsPointsLabel.text = [NSString stringWithFormat:@"%ld", (long)afterwardPoints];
 }
