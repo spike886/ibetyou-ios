@@ -7,11 +7,28 @@
 //
 
 #import "IBYMainNavigationController.h"
+#import "IBYTabBarController.h"
 
 @interface IBYMainNavigationController ()
+
+@property (strong, nonatomic) IBYTabBarController *tabBarController;
 
 @end
 
 @implementation IBYMainNavigationController
+
+#pragma mark - Class
+
++ (instancetype)mainNavigationController
+{
+    IBYTabBarController *tabBarController = [[IBYTabBarController alloc] init];
+    IBYMainNavigationController *mainNavigationController = [[IBYMainNavigationController alloc] initWithRootViewController:tabBarController];
+    if (mainNavigationController)
+    {
+        mainNavigationController.title = @"Welcome!";
+        mainNavigationController.tabBarController = tabBarController;
+    }
+    return mainNavigationController;
+}
 
 @end

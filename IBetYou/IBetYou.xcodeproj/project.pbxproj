@@ -17,6 +17,14 @@
 		6B2AF445192F82E100CBA0DD /* IBYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AF444192F82E100CBA0DD /* IBYUser.m */; };
 		6B2AF44E192F883800CBA0DD /* IBYMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AF44D192F883800CBA0DD /* IBYMainNavigationController.m */; };
 		6B2AF451192F8B7E00CBA0DD /* IBYWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AF450192F8B7E00CBA0DD /* IBYWebService.m */; };
+		6B2AF455192F949600CBA0DD /* IBYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AF453192F949600CBA0DD /* IBYTabBarController.m */; };
+		6B2AF456192F949600CBA0DD /* IBYTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B2AF454192F949600CBA0DD /* IBYTabBarController.xib */; };
+		6B2AF45B192F975400CBA0DD /* IBYMyCurrentBetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AF459192F975400CBA0DD /* IBYMyCurrentBetsViewController.m */; };
+		6B2AF45C192F975400CBA0DD /* IBYMyCurrentBetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B2AF45A192F975400CBA0DD /* IBYMyCurrentBetsViewController.xib */; };
+		6B2AF461192F978F00CBA0DD /* IBYScoreboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AF45F192F978F00CBA0DD /* IBYScoreboardViewController.m */; };
+		6B2AF462192F978F00CBA0DD /* IBYScoreboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B2AF460192F978F00CBA0DD /* IBYScoreboardViewController.xib */; };
+		6B2AF467192F97B400CBA0DD /* IBYCreateBetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AF465192F97B400CBA0DD /* IBYCreateBetViewController.m */; };
+		6B2AF468192F97B400CBA0DD /* IBYCreateBetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B2AF466192F97B400CBA0DD /* IBYCreateBetViewController.xib */; };
 		6B711054192F762E0095149F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B711053192F762E0095149F /* Foundation.framework */; };
 		6B711056192F762E0095149F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B711055192F762E0095149F /* CoreGraphics.framework */; };
 		6B711058192F762E0095149F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B711057192F762E0095149F /* UIKit.framework */; };
@@ -62,6 +70,18 @@
 		6B2AF44D192F883800CBA0DD /* IBYMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBYMainNavigationController.m; sourceTree = "<group>"; };
 		6B2AF44F192F8B7E00CBA0DD /* IBYWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBYWebService.h; sourceTree = "<group>"; };
 		6B2AF450192F8B7E00CBA0DD /* IBYWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBYWebService.m; sourceTree = "<group>"; };
+		6B2AF452192F949600CBA0DD /* IBYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBYTabBarController.h; sourceTree = "<group>"; };
+		6B2AF453192F949600CBA0DD /* IBYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBYTabBarController.m; sourceTree = "<group>"; };
+		6B2AF454192F949600CBA0DD /* IBYTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IBYTabBarController.xib; sourceTree = "<group>"; };
+		6B2AF458192F975400CBA0DD /* IBYMyCurrentBetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBYMyCurrentBetsViewController.h; sourceTree = "<group>"; };
+		6B2AF459192F975400CBA0DD /* IBYMyCurrentBetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBYMyCurrentBetsViewController.m; sourceTree = "<group>"; };
+		6B2AF45A192F975400CBA0DD /* IBYMyCurrentBetsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IBYMyCurrentBetsViewController.xib; sourceTree = "<group>"; };
+		6B2AF45E192F978F00CBA0DD /* IBYScoreboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBYScoreboardViewController.h; sourceTree = "<group>"; };
+		6B2AF45F192F978F00CBA0DD /* IBYScoreboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBYScoreboardViewController.m; sourceTree = "<group>"; };
+		6B2AF460192F978F00CBA0DD /* IBYScoreboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IBYScoreboardViewController.xib; sourceTree = "<group>"; };
+		6B2AF464192F97B400CBA0DD /* IBYCreateBetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBYCreateBetViewController.h; sourceTree = "<group>"; };
+		6B2AF465192F97B400CBA0DD /* IBYCreateBetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBYCreateBetViewController.m; sourceTree = "<group>"; };
+		6B2AF466192F97B400CBA0DD /* IBYCreateBetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IBYCreateBetViewController.xib; sourceTree = "<group>"; };
 		6B711050192F762E0095149F /* IBetYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBetYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B711053192F762E0095149F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6B711055192F762E0095149F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -157,8 +177,41 @@
 			children = (
 				6B2AF44C192F883800CBA0DD /* IBYMainNavigationController.h */,
 				6B2AF44D192F883800CBA0DD /* IBYMainNavigationController.m */,
+				6B2AF452192F949600CBA0DD /* IBYTabBarController.h */,
+				6B2AF453192F949600CBA0DD /* IBYTabBarController.m */,
+				6B2AF454192F949600CBA0DD /* IBYTabBarController.xib */,
 			);
 			name = "Main Navigation";
+			sourceTree = "<group>";
+		};
+		6B2AF457192F971D00CBA0DD /* My Current Bets */ = {
+			isa = PBXGroup;
+			children = (
+				6B2AF458192F975400CBA0DD /* IBYMyCurrentBetsViewController.h */,
+				6B2AF459192F975400CBA0DD /* IBYMyCurrentBetsViewController.m */,
+				6B2AF45A192F975400CBA0DD /* IBYMyCurrentBetsViewController.xib */,
+			);
+			name = "My Current Bets";
+			sourceTree = "<group>";
+		};
+		6B2AF45D192F977100CBA0DD /* Scoreboard */ = {
+			isa = PBXGroup;
+			children = (
+				6B2AF45E192F978F00CBA0DD /* IBYScoreboardViewController.h */,
+				6B2AF45F192F978F00CBA0DD /* IBYScoreboardViewController.m */,
+				6B2AF460192F978F00CBA0DD /* IBYScoreboardViewController.xib */,
+			);
+			name = Scoreboard;
+			sourceTree = "<group>";
+		};
+		6B2AF463192F97A100CBA0DD /* Create Bet */ = {
+			isa = PBXGroup;
+			children = (
+				6B2AF464192F97B400CBA0DD /* IBYCreateBetViewController.h */,
+				6B2AF465192F97B400CBA0DD /* IBYCreateBetViewController.m */,
+				6B2AF466192F97B400CBA0DD /* IBYCreateBetViewController.xib */,
+			);
+			name = "Create Bet";
 			sourceTree = "<group>";
 		};
 		6B711047192F762E0095149F = {
@@ -243,6 +296,9 @@
 				6B2AF440192F7E4200CBA0DD /* IBYViewController.m */,
 				6B2AF449192F834100CBA0DD /* Login / Sign Up */,
 				6B2AF44B192F880100CBA0DD /* Main Navigation */,
+				6B2AF457192F971D00CBA0DD /* My Current Bets */,
+				6B2AF45D192F977100CBA0DD /* Scoreboard */,
+				6B2AF463192F97A100CBA0DD /* Create Bet */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -329,7 +385,11 @@
 				6B711084192F77870095149F /* Podfile in Resources */,
 				6B71105E192F762E0095149F /* InfoPlist.strings in Resources */,
 				6B711066192F762E0095149F /* Images.xcassets in Resources */,
+				6B2AF456192F949600CBA0DD /* IBYTabBarController.xib in Resources */,
+				6B2AF468192F97B400CBA0DD /* IBYCreateBetViewController.xib in Resources */,
 				6B2AF43A192F798D00CBA0DD /* IBYSignUpViewController.xib in Resources */,
+				6B2AF45C192F975400CBA0DD /* IBYMyCurrentBetsViewController.xib in Resources */,
+				6B2AF462192F978F00CBA0DD /* IBYScoreboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +442,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B2AF433192F782800CBA0DD /* IBYLoginWebService.m in Sources */,
+				6B2AF455192F949600CBA0DD /* IBYTabBarController.m in Sources */,
+				6B2AF461192F978F00CBA0DD /* IBYScoreboardViewController.m in Sources */,
+				6B2AF45B192F975400CBA0DD /* IBYMyCurrentBetsViewController.m in Sources */,
 				6B711060192F762E0095149F /* main.m in Sources */,
 				6B2AF431192F782800CBA0DD /* IBYLoginViewController.m in Sources */,
 				6B2AF43E192F7C4000CBA0DD /* IBYSignUpWebService.m in Sources */,
@@ -391,6 +454,7 @@
 				6B711064192F762E0095149F /* IBYAppDelegate.m in Sources */,
 				6B2AF445192F82E100CBA0DD /* IBYUser.m in Sources */,
 				6B2AF44E192F883800CBA0DD /* IBYMainNavigationController.m in Sources */,
+				6B2AF467192F97B400CBA0DD /* IBYCreateBetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

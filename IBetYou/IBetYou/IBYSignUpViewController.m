@@ -65,6 +65,11 @@
     }
 }
 
+- (IBAction)cancelButtonPressed:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 #pragma mark - UITextFieldDelegate
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField

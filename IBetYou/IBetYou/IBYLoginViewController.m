@@ -101,7 +101,7 @@
 
 - (void)showMainScreen
 {
-    IBYMainNavigationController *navigationController = [[IBYMainNavigationController alloc] init];
+    IBYMainNavigationController *navigationController = [IBYMainNavigationController mainNavigationController];
     [self.navigationController presentViewController:navigationController animated:YES completion:nil];
 }
 

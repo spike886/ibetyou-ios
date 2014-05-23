@@ -1,5 +1,5 @@
 //
-//  IBYMainNavigationController.h
+//  IBYTabBarController.h
 //  IBetYou
 //
 //  Created by Pablo Villar on 5/23/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IBYMainNavigationController : UINavigationController
-
-+ (instancetype)mainNavigationController;
+@interface IBYTabBarController : UITabBarController
 
 @end
