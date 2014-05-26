@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F7972E21-78C9-4B8A-874E-615AC5BAE5F8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IBetYou</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5491191A-D863-4F86-AB93-340CAE0EC532</key>
+		<string>https://github.com/inaka/ibetyou-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IBetYou/IBetYou.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5491191A-D863-4F86-AB93-340CAE0EC532</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/inaka/ibetyou-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5491191A-D863-4F86-AB93-340CAE0EC532</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5491191A-D863-4F86-AB93-340CAE0EC532</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ibetyou-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
